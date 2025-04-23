@@ -11,7 +11,8 @@ chrome.storage.local.get('exchangeRate', (data) => {
                   span.ewc-wider-compact-view-only > span,
                   div.ewc-subtotal > div.ewc-subtotal-value > span.ewc-subtotal-amount > h2.a-color-price,
                   span.sc-invisible-when-no-js > div.a-checkbox > label > span.a-label > span.a-color-price,
-                  span.a-price > span`
+                  span.a-price > span,
+                  div.sc-buy-box-inner-box > h3.a-spacing-none > div.sc-subtotal-buybox > #sc-subtotal-amount-buybox > span.sc-price`
     .trim()
     .replace(/\s*\n\s*/g, '');
 

@@ -36,6 +36,15 @@ class CurrencyConverter {
 
     const raw = el.innerText;
 
+    // Si el elemento es a-price-whole intentamo reconstruir el número completo
+    if (el.classList.contains('a-price-whole')) {
+      // Se limpia el número (removiendo comas, espacios, saltos de línea)
+      const whole = el.childNodes[0]?.nodeValue?.replace(/[^\d]/g, "") ?? "0";
+      const fraction = el.parentElement?.querySelector('.a-price-fraction')?.innerText ?? "00";
+
+      raw = `${whole}.${fraction}`;
+    }
+
     // Este regex soporta:
     // - "1,015.77"
     // - "1,015"
