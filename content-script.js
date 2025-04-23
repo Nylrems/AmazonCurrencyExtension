@@ -12,7 +12,13 @@ chrome.storage.local.get('exchangeRate', (data) => {
                   div.ewc-subtotal > div.ewc-subtotal-value > span.ewc-subtotal-amount > h2.a-color-price,
                   span.sc-invisible-when-no-js > div.a-checkbox > label > span.a-label > span.a-color-price,
                   span.a-price > span,
-                  div.sc-buy-box-inner-box > h3.a-spacing-none > div.sc-subtotal-buybox > #sc-subtotal-amount-buybox > span.sc-price`
+                  div.sc-buy-box-inner-box > h3.a-spacing-none > div.sc-subtotal-buybox > #sc-subtotal-amount-buybox > span.sc-price,
+                  li > span.a-list-item > div.order-summary-grid > div.order-summary-line-definition,
+                  span.lineitem-price-text,
+                  div.pyo-block-inline-container > div.pyo-block-inline-container-right > ul.order-summary-total-line > li.a-spacing-mini > span > div.grand-total-cell,
+                  div > div > div > div > div > div > div > a > span.a-size-base > span,
+                  #sc-active-cart-bottom-bar-subtotal-wrapper > div.sc-subtotal-activecart > span.sc-price-container > span.sc-price
+                  `
     .trim()
     .replace(/\s*\n\s*/g, '');
 
